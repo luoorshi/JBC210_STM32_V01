@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\oled.o"
+".\objects\adc_init.o"
+".\objects\delay_func.o"
+".\objects\i2c_init.o"
+".\objects\pwm_init.o"
+".\objects\stm32f10x_it.o"
+".\objects\time_init.o"
+".\objects\misc.o"
+".\objects\stm32f10x_adc.o"
+".\objects\stm32f10x_exti.o"
+".\objects\stm32f10x_flash.o"
+".\objects\stm32f10x_fsmc.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_i2c.o"
+".\objects\stm32f10x_pwr.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_rtc.o"
+".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_usart.o"
+".\objects\gpio_stm32f10x.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+--strict --scatter ".\Objects\JBC_Proj_v0.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\JBC_Proj_v0.map" -o .\Objects\JBC_Proj_v0.1

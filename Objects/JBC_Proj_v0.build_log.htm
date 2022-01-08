@@ -1,0 +1,700 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ls ls, ls, LIC=585FJ-UGICS-PCDJ8-3S3P9-UEXBC-3RHJY
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+E:\learning\my_code\JBC_210_V0.1\JBC_Proj_v0.1.uvprojx
+Project File Date:  11/09/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target'
+Source/main.c(9): warning: no previous prototype for function 'Hal_Init' [-Wmissing-prototypes]
+void Hal_Init(void)
+     ^
+Source/main.c(9): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Hal_Init(void)
+^
+static 
+Source/main.c(64): warning: 'return' will never be executed [-Wunreachable-code-return]
+        return 0;
+               ^
+2 warnings generated.
+compiling main.c...
+compiling delay_func.c...
+drv_init/src/Time_Init.c(19): warning: In file included from...
+./drv_init/inc\time_init.h(4): warning: In file included from...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/inc\stm32f10x_tim.h(51): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+1 warning generated.
+compiling Time_Init.c...
+drv_init/src/adc_init.c(21): warning: In file included from...
+./drv_init/inc\adc_init.h(4): warning: In file included from...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/inc\stm32f10x_adc.h(64): warning: padding struct 'ADC_InitTypeDef' with 2 bytes to align 'ADC_ExternalTrigConv' [-Wpadded]
+  uint32_t ADC_ExternalTrigConv;          /*!< Defines the external trigger used to start the analog
+           ^
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/inc\stm32f10x_adc.h(50): warning: padding size of 'ADC_InitTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+2 warnings generated.
+compiling adc_init.c...
+drv_init/src/i2c_init.c(22): warning: In file included from...
+./drv_init/inc\i2c_init.h(5): warning: In file included from...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/inc\stm32f10x_i2c.h(50): warning: padding size of 'I2C_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+1 warning generated.
+compiling i2c_init.c...
+drv_init/src/pwm_init.c(19): warning: In file included from...
+./drv_init/inc\pwm_init.h(5): warning: In file included from...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/inc\stm32f10x_tim.h(51): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+1 warning generated.
+compiling pwm_init.c...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/src/misc.c(132): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    NVIC->IP[NVIC_InitStruct->NVIC_IRQChannel] = tmppriority;
+                                               ~ ^~~~~~~~~~~
+1 warning generated.
+compiling misc.c...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/src/stm32f10x_exti.c(23): warning: In file included from...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/inc\stm32f10x_exti.h(76): warning: padding size of 'EXTI_InitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+1 warning generated.
+compiling stm32f10x_exti.c...
+drv_init/src/stm32f10x_it.c(48): warning: function 'HardFaultException' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+drv_init/src/stm32f10x_it.c(63): warning: function 'MemManageException' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+drv_init/src/stm32f10x_it.c(78): warning: function 'BusFaultException' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+drv_init/src/stm32f10x_it.c(93): warning: function 'UsageFaultException' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+drv_init/src/stm32f10x_it.c(493): warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+        static cont_time = 0;
+        ~~~~~~ ^
+drv_init/src/stm32f10x_it.c(20): warning: no previous extern declaration for non-static variable 'Time_flag' [-Wmissing-variable-declarations]
+unsigned int Time_flag;
+             ^
+drv_init/src/stm32f10x_it.c(20): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned int Time_flag;
+^
+drv_init/src/stm32f10x_it.c(21): warning: no previous extern declaration for non-static variable 'Key_flag' [-Wmissing-variable-declarations]
+unsigned int Key_flag;
+             ^
+drv_init/src/stm32f10x_it.c(21): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned int Key_flag;
+^
+7 warnings generated.
+compiling stm32f10x_it.c...
+Source/src/oled.c(44): warning: In file included from...
+./Source/inc\codetab.h(4): warning: no previous extern declaration for non-static variable 'F16x16' [-Wmissing-variable-declarations]
+unsigned char F16x16[] =
+              ^
+./Source/inc\codetab.h(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned char F16x16[] =
+^
+./Source/inc\codetab.h(15): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00,// sp
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(16): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x00, 0x2f, 0x00, 0x00,// !
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(17): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x07, 0x00, 0x07, 0x00,// "
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(18): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x14, 0x7f, 0x14, 0x7f, 0x14,// #
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(19): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x24, 0x2a, 0x7f, 0x2a, 0x12,// $
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(20): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x62, 0x64, 0x08, 0x13, 0x23,// %
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(21): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x36, 0x49, 0x55, 0x22, 0x50,// &
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(22): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x05, 0x03, 0x00, 0x00,// '
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(23): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x1c, 0x22, 0x41, 0x00,// (
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(24): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x41, 0x22, 0x1c, 0x00,// )
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(25): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x14, 0x08, 0x3E, 0x08, 0x14,// *
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(26): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x08, 0x08, 0x3E, 0x08, 0x08,// +
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(27): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x00, 0xA0, 0x60, 0x00,// ,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(28): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x08, 0x08, 0x08, 0x08, 0x08,// -
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(29): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x60, 0x60, 0x00, 0x00,// .
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(30): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x20, 0x10, 0x08, 0x04, 0x02,// /
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(31): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x3E, 0x51, 0x49, 0x45, 0x3E,// 0
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(32): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x42, 0x7F, 0x40, 0x00,// 1
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(33): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x42, 0x61, 0x51, 0x49, 0x46,// 2
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(34): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x21, 0x41, 0x45, 0x4B, 0x31,// 3
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(35): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x18, 0x14, 0x12, 0x7F, 0x10,// 4
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(36): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x27, 0x45, 0x45, 0x45, 0x39,// 5
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(37): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x3C, 0x4A, 0x49, 0x49, 0x30,// 6
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(38): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x01, 0x71, 0x09, 0x05, 0x03,// 7
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(39): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x36, 0x49, 0x49, 0x49, 0x36,// 8
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(40): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x06, 0x49, 0x49, 0x29, 0x1E,// 9
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(41): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x36, 0x36, 0x00, 0x00,// :
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(42): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x56, 0x36, 0x00, 0x00,// ;
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(43): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x08, 0x14, 0x22, 0x41, 0x00,// <
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(44): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x14, 0x14, 0x14, 0x14, 0x14,// =
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(45): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x41, 0x22, 0x14, 0x08,// >
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(46): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x02, 0x01, 0x51, 0x09, 0x06,// ?
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(47): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x32, 0x49, 0x59, 0x51, 0x3E,// @
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(48): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7C, 0x12, 0x11, 0x12, 0x7C,// A
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(49): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x49, 0x49, 0x49, 0x36,// B
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(50): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x3E, 0x41, 0x41, 0x41, 0x22,// C
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(51): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x41, 0x41, 0x22, 0x1C,// D
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(52): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x49, 0x49, 0x49, 0x41,// E
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(53): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x09, 0x09, 0x09, 0x01,// F
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(54): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x3E, 0x41, 0x49, 0x49, 0x7A,// G
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(55): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x08, 0x08, 0x08, 0x7F,// H
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(56): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x41, 0x7F, 0x41, 0x00,// I
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(57): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x20, 0x40, 0x41, 0x3F, 0x01,// J
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(58): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x08, 0x14, 0x22, 0x41,// K
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(59): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x40, 0x40, 0x40, 0x40,// L
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(60): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x02, 0x0C, 0x02, 0x7F,// M
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(61): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x04, 0x08, 0x10, 0x7F,// N
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(62): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x3E, 0x41, 0x41, 0x41, 0x3E,// O
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(63): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x09, 0x09, 0x09, 0x06,// P
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(64): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x3E, 0x41, 0x51, 0x21, 0x5E,// Q
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(65): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x09, 0x19, 0x29, 0x46,// R
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(66): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x46, 0x49, 0x49, 0x49, 0x31,// S
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(67): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x01, 0x01, 0x7F, 0x01, 0x01,// T
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(68): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x3F, 0x40, 0x40, 0x40, 0x3F,// U
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(69): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x1F, 0x20, 0x40, 0x20, 0x1F,// V
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(70): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x3F, 0x40, 0x38, 0x40, 0x3F,// W
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(71): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x63, 0x14, 0x08, 0x14, 0x63,// X
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(72): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x07, 0x08, 0x70, 0x08, 0x07,// Y
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(73): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x61, 0x51, 0x49, 0x45, 0x43,// Z
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(74): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x7F, 0x41, 0x41, 0x00,// [
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(75): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x55, 0x2A, 0x55, 0x2A, 0x55,// 55
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(76): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x41, 0x41, 0x7F, 0x00,// ]
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(77): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x04, 0x02, 0x01, 0x02, 0x04,// ^
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(78): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x40, 0x40, 0x40, 0x40, 0x40,// _
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(79): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x01, 0x02, 0x04, 0x00,// '
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(80): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x20, 0x54, 0x54, 0x54, 0x78,// a
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(81): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x48, 0x44, 0x44, 0x38,// b
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(82): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x38, 0x44, 0x44, 0x44, 0x20,// c
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(83): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x38, 0x44, 0x44, 0x48, 0x7F,// d
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(84): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x38, 0x54, 0x54, 0x54, 0x18,// e
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(85): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x08, 0x7E, 0x09, 0x01, 0x02,// f
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(86): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x18, 0xA4, 0xA4, 0xA4, 0x7C,// g
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(87): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x08, 0x04, 0x04, 0x78,// h
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(88): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x44, 0x7D, 0x40, 0x00,// i
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(89): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x40, 0x80, 0x84, 0x7D, 0x00,// j
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(90): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7F, 0x10, 0x28, 0x44, 0x00,// k
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(91): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x00, 0x41, 0x7F, 0x40, 0x00,// l
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(92): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7C, 0x04, 0x18, 0x04, 0x78,// m
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(93): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7C, 0x08, 0x04, 0x04, 0x78,// n
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(94): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x38, 0x44, 0x44, 0x44, 0x38,// o
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(95): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0xFC, 0x24, 0x24, 0x24, 0x18,// p
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(96): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x18, 0x24, 0x24, 0x18, 0xFC,// q
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(97): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x7C, 0x08, 0x04, 0x04, 0x08,// r
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(98): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x48, 0x54, 0x54, 0x54, 0x20,// s
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(99): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x04, 0x3F, 0x44, 0x40, 0x20,// t
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(100): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x3C, 0x40, 0x40, 0x20, 0x7C,// u
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(101): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x1C, 0x20, 0x40, 0x20, 0x1C,// v
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(102): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x3C, 0x40, 0x30, 0x40, 0x3C,// w
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(103): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x44, 0x28, 0x10, 0x28, 0x44,// x
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(104): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x1C, 0xA0, 0xA0, 0xA0, 0x7C,// y
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(105): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x00, 0x44, 0x64, 0x54, 0x4C, 0x44,// z
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(106): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x14, 0x14, 0x14, 0x14, 0x14, 0x14,// horiz lines
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                 }
+./Source/inc\codetab.h(13): warning: no previous extern declaration for non-static variable 'F6x8' [-Wmissing-variable-declarations]
+const unsigned char F6x8[][6] =
+                    ^
+./Source/inc\codetab.h(13): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const unsigned char F6x8[][6] =
+      ^
+./Source/inc\codetab.h(109): warning: no previous extern declaration for non-static variable 'F8X16' [-Wmissing-variable-declarations]
+const unsigned char F8X16[]=      
+                    ^
+./Source/inc\codetab.h(109): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const unsigned char F8X16[]=      
+      ^
+./Source/inc\codetab.h(208): warning: no previous extern declaration for non-static variable 'F16X24' [-Wmissing-variable-declarations]
+const unsigned char F16X24[]=     
+                    ^
+./Source/inc\codetab.h(208): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const unsigned char F16X24[]=     
+      ^
+./Source/inc\codetab.h(221): warning: no previous extern declaration for non-static variable 'BMP1' [-Wmissing-variable-declarations]
+unsigned char BMP1[] =
+              ^
+./Source/inc\codetab.h(221): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned char BMP1[] =
+^
+Source/src/oled.c(332): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned char' [-Wimplicit-int-conversion]
+                str[0]=num/1000 +48;
+                      ~~~~~~~~~~^~~
+Source/src/oled.c(361): warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned char' [-Wimplicit-int-conversion]
+                str[len-1-i]=(num%(10*C_nu))/C_nu +48;
+                            ~~~~~~~~~~~~~~~~~~~~~~^~~
+99 warnings generated.
+compiling oled.c...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/src/stm32f10x_adc.c(23): warning: In file included from...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/inc\stm32f10x_adc.h(64): warning: padding struct 'ADC_InitTypeDef' with 2 bytes to align 'ADC_ExternalTrigConv' [-Wpadded]
+  uint32_t ADC_ExternalTrigConv;          /*!< Defines the external trigger used to start the analog
+           ^
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/inc\stm32f10x_adc.h(50): warning: padding size of 'ADC_InitTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+2 warnings generated.
+compiling stm32f10x_adc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_pwr.c...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/src/stm32f10x_i2c.c(23): warning: In file included from...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/inc\stm32f10x_i2c.h(50): warning: padding size of 'I2C_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+1 warning generated.
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/src/stm32f10x_usart.c(23): warning: In file included from...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/inc\stm32f10x_usart.h(50): warning: padding size of 'USART_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/src/stm32f10x_usart.c(1043): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = ((uint16_t)0x01 << (uint16_t)bitpos);
+         ~  ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+compiling stm32f10x_usart.c...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(23): warning: In file included from...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/inc\stm32f10x_tim.h(51): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(726): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+             TIM_BDTRInitStruct->TIM_Break | TIM_BDTRInitStruct->TIM_BreakPolarity |
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(1983): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCE_Set << TIM_Channel;
+      ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(2013): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCNE_Set << TIM_Channel;
+      ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(2058): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp1 = CCER_CCE_Set << (uint16_t)TIM_Channel;
+       ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+compiling stm32f10x_tim.c...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/RTE_Driver/GPIO_STM32F10x.c(10): warning: In file included from...
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/RTE_Driver/GPIO_STM32F10x.h(230): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  return (GPIOx->IDR);
+  ~~~~~~  ~~~~~~~^~~
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/RTE_Driver/GPIO_STM32F10x.c(112): warning: integer constant not in range of enumerated type 'GPIO_CONF' [-Wassign-enum]
+      conf &= ~1;
+              ^
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/RTE_Driver/GPIO_STM32F10x.c(124): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  *reg &= ~(0xF << (num << 2));
+       ~~ ^~~~~~~~~~~~~~~~~~~~
+C:/Users/LuoorShi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.2.0/RTE_Driver/GPIO_STM32F10x.c(125): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  *reg |= ((conf << 2) | mode) << (num << 2);
+       ~~ ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+4 warnings generated.
+compiling GPIO_STM32F10x.c...
+RTE/Device/STM32F103CB/system_stm32f10x.c(167): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103CB/system_stm32f10x.c(167): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+1 warning generated.
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_md.s...
+linking...
+Program Size: Code=3698 RO-data=290 RW-data=4 ZI-data=1652  
+FromELF: creating hex file...
+".\Objects\JBC_Proj_v0.1" - 0 Error(s), 130 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: GPIO Version: 1.3
+   * Component: Startup Version: 1.0.0
+   * Component: ADC Version: 3.5.0
+   * Component: EXTI Version: 3.5.0
+   * Component: FSMC Version: 3.5.0
+   * Component: Flash Version: 3.5.0
+   * Component: Framework Version: 3.5.1
+   * Component: GPIO Version: 3.5.0
+   * Component: I2C Version: 3.5.0
+   * Component: PWR Version: 3.5.0
+   * Component: RCC Version: 3.5.0
+   * Component: RTC Version: 3.5.0
+   * Component: TIM Version: 3.5.0
+   * Component: USART Version: 3.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103CB
+  .\RTE\_Target
+  C:\Users\LuoorShi\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\LuoorShi\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+  C:\Users\LuoorShi\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc
+  C:\Users\LuoorShi\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:GPIO:1.3
+      Include file:  RTE_Driver\GPIO_STM32F10x.h
+      Source file:   RTE_Driver\GPIO_STM32F10x.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+
+   * Component: Keil::Device:StdPeriph Drivers:ADC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_adc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_adc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:EXTI:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_exti.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_exti.h
+
+   * Component: Keil::Device:StdPeriph Drivers:FSMC:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_fsmc.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_fsmc.h
+
+   * Component: Keil::Device:StdPeriph Drivers:Flash:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_flash.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_flash.h
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+
+   * Component: Keil::Device:StdPeriph Drivers:I2C:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_i2c.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_i2c.c
+
+   * Component: Keil::Device:StdPeriph Drivers:PWR:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_pwr.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_pwr.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RTC:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rtc.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rtc.h
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
